@@ -1,48 +1,20 @@
 # program to manage Student
 
+from fileinput import filename
+import os
 from msvcrt import getch
-from os import system
+from os import remove, system
 import json
+import Searching_in_File 
+import Destroy_database as db
+import reading as red
+import inputing as inpu
 
 
-def inputing():
-    system("cls")
-    details = []
-    print(f"\t\t <---- Welcome to input section -----> ")
-    name = input("\t\t Enter name     ----->")
-    address = input("\t\t Enter Address ----->")
-    age = input("\t\t Enter Age    ----->")
-    clas = input("\t\t Enter Class  ----->")
-    roll = input("\t\t Enter Roll no  ----->")
-    details.append(name)
-    details.append(address)
-    details.append(age)
-    details.append(clas)
-    details.append(roll)
-   
-    with open("detail.json", "a") as file:
-        json.dump(details, file)
-        file.write("\n")
-    file.close()
-    print(f"\t\t <---- Sucessfully written to file  ---> ")
-    getch()
 
-def display():
-    
-    print(f"\t\t <----- Welcome to Display section -----> ")
-    with open("detail.json", 'r') as file:
-        for var in file:
-            print(var)
-    #         red = json.load(var)
-    # file.close()
-    # print(f"\t\t <----------------------------------->")
-    # print(f"\t\t Name -----> {red[0]} ")
-    # print(f"\t\t Address -----> {red[1]} ")
-    # print(f"\t\t Age -----> {red[2]} ")
-    # print(f"\t\t Class -----> {red[3]} ")
-    # print(f"\t\t Roll no  -----> {red[4]} ")
-    # print(f"\t\t <----------------------------------->")
-    getch()
+
+
+
 
 def menu():
     while True:
@@ -52,20 +24,18 @@ def menu():
         print(f"\t\t<------ 1 . Input   ----->")
         print(f"\t\t<------ 2 . Display ----->")
         print(f"\t\t<------ 3 . Destory ----->")
-        print(f"\t\t<------ 5 . display ----->")
-        print(f"\t\t<------ 99. Input   ----->")
+        print(f"\t\t<------ 5 . Search ----->")
+        print(f"\t\t<------ 99. Exit   ----->")
         print("\t\t<----------------------------------------->")
         ch = int(input())
         if ch == 1:
-            inputing()
+            inputi()
         elif ch == 2:
-            display()
+            red.DisplayingToScreeenFromFile()
         elif ch == 3:
-            # display()
-            k=0
+            db.DestoryingTheDatabase()
         elif ch == 5:
-            # display()
-            k=0
+            Searching_in_File.sea()
         elif ch == 99:
             print(f"\t\t <----- Thanks for using our program -----> ")
             exit()
