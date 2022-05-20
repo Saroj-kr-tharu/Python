@@ -1,0 +1,7 @@
+         
+          	   Special  Character ----> Yes
+		   Number  Character ----> Yes
+          	   Small    Character ----> Yes
+		   Capital  Character ----> Yes
+	
+        

@@ -1,5 +1,37 @@
-{"Name": "Saroj", "Address": "Maithawa", "Age": "33", "Class": "99", "Roll no ": "33"}
-{"Name": "NOobra", "Address": "joker", "Age": "joker", "Class": "joker", "Roll no ": "33"}
-{"Name": "Pashupati", "Address": "Kohalpur", "Age": "33", "Class": "22", "Roll no ": "33"}
-{"Name": "Saroj", "Address": "Kohalpur", "Age": "20", "Class": "15", "Roll no ": "33"}
-{"Name": "Pashupati", "Address": "Maithawa", "Age": "9", "Class": "5", "Roll no ": "8"}
+[
+    {
+        "Name": "Pashupati",
+        "Address": "Kohalpur",
+        "Age": "23",
+        "Class": "33",
+        "Roll no ": "44"
+    },
+    {
+        "Name": "Cracker",
+        "Address": "noobra",
+        "Age": "34",
+        "Class": "33",
+        "Roll no ": "44"
+    },
+    {
+        "Name": "noobra",
+        "Address": "joker",
+        "Age": "jkdj",
+        "Class": "kjfd",
+        "Roll no ": "kfjd"
+    },
+    {
+        "Name": "Michapur",
+        "Address": "Jogindar",
+        "Age": "34",
+        "Class": "33",
+        "Roll no ": "44"
+    },
+    {
+        "Name": "Saroj",
+        "Address": "Kohalpur",
+        "Age": "22",
+        "Class": "33",
+        "Roll no ": "44"
+    }
+]

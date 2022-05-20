@@ -4,18 +4,11 @@ from msvcrt import getch
 from os import system
 import GetData as getdata
 import animator as animation
-# import reading
 
 
-def SearchingASpecificData(filename="detail.json"):
+def SearchInReturn(name,filename="detail.json"):
     temp = getdata.ReturnData(filename)
-    str=(f"\t\t <--------- Welcome To Search Section ---------> ")
-    animation.ReadingFromString(str)
-
-    name = str=("\n\t\t\t  Enter Name To Search ----> ")
-    animation.ReadingFromString(str)
-    name=input()
-
+    
     display = False
     no = 99
     for var in temp:
@@ -39,4 +32,12 @@ def SearchingASpecificData(filename="detail.json"):
     if display==False:
         str=(f"\t\t    <---- Not Found {name} in the list ----> ")
         animation.ReadingFromString(str)
+        return False
+    else:
+        return True
 # SearchingASpecificData()  # This is for testing purpose
+# ch=SearchInReturn('Sarffoj')
+# if ch==True:
+#     print(f"\t\t YEs ")
+# else:
+#     print(f"\t\t no")
