@@ -10,14 +10,14 @@ def DestoryingTheDatabase(filename="detail.json"):
         ch=input()
         if ch=='y' or ch=='Y' :
              os.remove(filename)
-             str=(f"\t\t  <---- Sucessfully Destory -----> ")
+             str=(f"\t\t\t    <---- Sucessfully Destory -----> ")
              animation.ReadingFromString(str)
         else:
-            str=(f"\t\t  <---- Cancell -----> ")
+            str=(f"\t\t\t    <---- Cancell -----> ")
             animation.ReadingFromString(str)
             return
     except:
-        str=(f"\t\t  <---- File not found ----> ")
+        str=(f"\t\t\t    <---- File not found ----> ")
         animation.ReadingFromString(str)
     getch()
 # DestoryingTheDatabase()

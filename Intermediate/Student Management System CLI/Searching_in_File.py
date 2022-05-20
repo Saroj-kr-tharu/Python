@@ -9,10 +9,10 @@ import animator as animation
 
 def SearchingASpecificData(filename="detail.json"):
     temp = getdata.ReturnData(filename)
-    str=(f"\t\t <--------- Welcome To Search Section ---------> ")
+    str=(f"\n\t\t\t <--------- Welcome To Search Section ---------> ")
     animation.ReadingFromString(str)
 
-    name = str=("\n\t\t\t  Enter Name To Search ----> ")
+    name = str=("\n\t\t\t\t   Enter Name To Search ----> ")
     animation.ReadingFromString(str)
     name=input()
 
@@ -27,16 +27,16 @@ def SearchingASpecificData(filename="detail.json"):
                     ele=0
             if display == True:
                 if ele==0:
-                    str="\n\t\t\t <---- Sucessfully Found ----> "
+                    str="\n\t\t\t\t    <---- Sucessfully Found ----> "
                     animation.ReadingFromString(str)
                     ele=99
                 
                 if no <= 5:
-                    str=(f"\n\t\t\t  {vale} -----> {keey} ")
+                    str=(f"\n\t\t\t\t\t  {vale} -----> {keey} ")
                     animation.ReadingFromString(str)
                     no+=1
 
     if display==False:
-        str=(f"\t\t    <---- Not Found {name} in the list ----> ")
+        str=(f"\t\t\t       <---- Not Found {name} in the list ----> ")
         animation.ReadingFromString(str)
 # SearchingASpecificData()  # This is for testing purpose

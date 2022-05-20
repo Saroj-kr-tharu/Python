@@ -24,14 +24,14 @@ def DisplayingToScreeenFromFile():
         animation.ReadingFromString(str)
 
         for vale, kess in var.items():
-            print(f"\t\t\t      {vale} ----> {kess} ")
+            print(f"\t\t\t\t  {vale} ----> {kess} ")
                                
         print(f"\n",end='')
 
 
-    str=(f"\n\t\t   Total Number of User ---> {num} ")
+    str=(f"\n\t\t\t    Total Number of User ---> {num} ")
     animation.ReadingFromString(str)
 
 
-DisplayingToScreeenFromFile()
+# DisplayingToScreeenFromFile()
  

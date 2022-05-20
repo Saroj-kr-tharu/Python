@@ -33,41 +33,48 @@ def menu():
     banner="art/banner.txt"
     while True:
         os.system("cls")
+        animation.ReadingFromFile(welcome,4)
 
-        str="\t  <-------- Welcome To Main Menu --------------->"
+        str="\n\t\t\t      <-------- Welcome To Main Menu --------------->"
         animation.ReadingFromString(str)
-        print("\n\t\t<----------------------------------->")
-        print(f"\t\t   <------ 1 . Input   ----->")
-        print(f"\t\t   <------ 2 . Display ----->")
-        print(f"\t\t   <------ 3 . Destory ----->")
-        print(f"\t\t   <------ 4 . Delete ----->")
-        print(f"\t\t   <------ 5 . Search ----->")
-        print(f"\t\t   <-----  6 . Replace ----->")
-        print(f"\t\t   <-----  10. About   ----->")
-        print(f"\t\t   <------ 99. Exit   ----->")
-        print("\t\t<----------------------------------->")
+        print("\n\t\t\t\t <----------------------------------->")
+        print(f"\t\t\t\t   <------ 1 . Input   ----->")
+        print(f"\t\t\t\t   <------ 2 . Display ----->")
+        print(f"\t\t\t\t   <------ 3 . Destory ----->")
+        print(f"\t\t\t\t   <------ 4 . Delete ----->")
+        print(f"\t\t\t\t   <------ 5 . Search ----->")
+        print(f"\t\t\t\t   <-----  6 . Replace ----->")
+        print(f"\t\t\t\t   <-----  10. About   ----->")
+        print(f"\t\t\t\t   <------ 99. Exit   ----->")
+        print("\t\t\t\t<----------------------------------->")
         ch = int(input())
         if ch == 1:
             os.system("cls")
+            animation.ReadingFromFile(banner,8)
             inpu.Writing_To_Disk()
             getch()
         elif ch == 2:
             os.system("cls")
+            animation.ReadingFromFile(banner,8)
             red.DisplayingToScreeenFromFile()
             getch()
         elif ch == 3:
             os.system("cls")
+            animation.ReadingFromFile(banner,8)
             db.DestoryingTheDatabase()
             getch()
         elif ch == 4:
             os.system("cls")
+            animation.ReadingFromFile(banner,8)
             dele.Deleting_Particular_Data()
             getch()
         elif ch == 5:
             os.system("cls")
+            animation.ReadingFromFile(banner,8)
             searching.SearchingASpecificData()
         elif ch == 6:
             os.system("cls")
+            animation.ReadingFromFile(banner,8)
             rep.ReplaceAParticular()
             getch()
         elif ch == 10:
@@ -83,5 +90,5 @@ def menu():
             animation.ReadingFromString(str)
         getch()
 
-intial()
+# intial()
 menu()
