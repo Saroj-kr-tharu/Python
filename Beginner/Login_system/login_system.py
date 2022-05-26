@@ -9,7 +9,7 @@ import Destory_Database as DB
 import animator as animation
 
 def intial():
-    system("color 2a")
+    system("color a")
     welcome="art/Art.txt"
     developer="art/Developer.txt"
     system("cls")

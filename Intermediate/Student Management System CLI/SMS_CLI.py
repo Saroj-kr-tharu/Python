@@ -17,7 +17,7 @@ import animator as animation
 
 def intial():
     os.system("cls")
-    os.system("color 2a")
+    os.system("color a")
     developer="art/Developer.txt"
     welcome="art/Art.txt"
 
